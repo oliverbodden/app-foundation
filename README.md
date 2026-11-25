@@ -9,7 +9,7 @@ apps/
 packages/
   shared/    Types, data access, validation — imported by both apps as @app/shared
 supabase/
-  schema.sql Database table for the demo
+  migrations/ Database schema changes, applied in order to dev, then prod
 ```
 
 Both apps render the same todo list from the same Supabase table using the same functions
@@ -32,7 +32,7 @@ npm install                          # if not done automatically
 Then set up the database:
 
 1. Create a free project at supabase.com.
-2. Paste `supabase/schema.sql` into the SQL Editor and run it.
+2. Run each file in `supabase/migrations/` (in order) in the SQL Editor.
 3. Copy `apps/web/.env.example` → `apps/web/.env.local` and `apps/mobile/.env.example` → `apps/mobile/.env`,
    filling in the URL and anon key from Project Settings → API.
 

@@ -1,4 +1,4 @@
--- Run this in Supabase → SQL Editor.
+-- Applied to app-foundation-dev and app-foundation-prod on 2026-11-25.
 create table if not exists public.todos (
   id uuid primary key default gen_random_uuid(),
   title text not null check (char_length(title) between 1 and 200),
