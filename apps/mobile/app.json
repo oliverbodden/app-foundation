@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "App Foundation",
+    "slug": "app-foundation",
+    "scheme": "appfoundation",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": ["expo-router"],
+    "ios": { "supportsTablet": true },
+    "android": {},
+    "web": { "bundler": "metro" }
+  }
+}
